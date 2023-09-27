@@ -70,6 +70,7 @@ function resetScore(){
 
 
 function playGame(playermove){
+    
 
     let comp_move = getCompMove()
     
