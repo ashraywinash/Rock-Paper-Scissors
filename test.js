@@ -1,4 +1,5 @@
 
+
 let score = {
     wins: 0,
     losses : 0,
@@ -70,7 +71,6 @@ function resetScore(){
 
 
 function playGame(playermove){
-    
 
     let comp_move = getCompMove()
     
@@ -118,3 +118,5 @@ function autoplay(){
     }
 
 }
+
+
