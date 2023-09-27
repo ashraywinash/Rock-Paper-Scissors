@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container" id="play">
+        <button onclick="playGame('rock')" class="btn-play"><a href="#score"><img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/rock-emoji.png"></a></button>
+        <button onclick="playGame('paper')" class="btn-play"><a href="#score"><img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/paper-emoji.png"></a></button>
+        <button onclick="playGame('scissors')" class="btn-play"><a href="#score"><img class="move-icon" src="https://supersimple.dev/projects/rock-paper-scissors/images/scissors-emoji.png"></a></button>
+    </div>
+    <section id="score">
+        <button onclick="resetScore()" class="Reset-btn">Reset Score</button>
+        <span class="whoplayedwhat"></span>
+        <div class="scoress">
+            <span class="resss">Wins : </span>
+            <span class="winscounter"></span>
+            <span class="resss">Losses : </span>
+            <span class="lossescounter"></span>
+            <span class="resss">Ties : </span>
+            <span class="tiescounter"></span> 
+        </div>
+           
+        <button id="Replay-btn"><a href="#play">Replay</a></button>
+        <button onclick="autoplay()" class="Reset-btn">Autoplay</button>
+    </section>
+    
+    <script src="./test.js"></script>
+</body>
+</html>
