@@ -1,5 +1,4 @@
 
-
 let score = {
     wins: 0,
     losses : 0,
@@ -118,5 +117,3 @@ function autoplay(){
     }
 
 }
-
-
