@@ -5,11 +5,19 @@ let score = {
     losses : 0,
     ties : 0,
 };
+
+const storedScore = JSON.parse(localStorage.getItem('score'));
+
+if (storedScore !== null) {
+    score = storedScore;
+}
+
 document.querySelector('.lossescounter').innerHTML = String(score.losses)
 document.querySelector('.winscounter').innerHTML = String(score.wins)
 document.querySelector('.tiescounter').innerHTML = String(score.ties)
 
-score = JSON.parse(localStorage.getItem('score'))
+
+
 
 function getCompMove(){
 
