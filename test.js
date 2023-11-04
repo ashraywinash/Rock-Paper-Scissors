@@ -103,7 +103,7 @@ function playGame(playermove){
 
     localStorage.setItem('score',JSON.stringify(score))
 
-    console.log(score)
+   
     return;
 }
 
